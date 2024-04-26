@@ -1,0 +1,19 @@
+Write two to three sentences on why Django is so popular among web developers.
+    Django is popular among web developers because it provide rapid development capabiligies, security features, and scalability.
+
+
+After some research, list five large companies that use Django. Specify what the company’s product or service is and what they use Django for.
+    Companies that uses Django includes Instagram, Pinterest, Youtube, Spotify, and Dropbox
+
+
+For each of the following scenarios, explain if you would use Django (and why or why not):
+    You need to develop a web application with multiple users.
+        - Would use Django since it will provide security to each individual user
+    You need fast deployment and the ability to make changes as you proceed.
+        - Would uses because Django provides fast protyping and allow for high-speed applications.
+    You need to build a very basic application, which doesn’t require any database access or file operations.
+        - Won't use Django since I don't need database access and file operations
+    You want to build an application from scratch and want a lot of control over how it works.
+        - Won't use Django because I would be losing control over the details
+    You’re about to start working on a big project and are afraid of getting stuck and needing additional support.
+        - Wold use it since since it is a large project. And it would have a large and supportive community.
