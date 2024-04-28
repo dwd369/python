@@ -1,5 +1,0 @@
-# Test backup files
-*.backup
-
-# Database
-*.sqlite3
