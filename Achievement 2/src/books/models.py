@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 genre_choices = (
     ('classic', 'Classic'),
@@ -33,6 +34,10 @@ class Book(models.Model):
         )
     )
     author_name = models.CharField(max_length = 120, null = True)
+    pic = models.ImageField(upload_to = 'books', default = 'no_picture.jpg')
+
+    def get_absolute_url(self):
+       return reverse ('books:detail', kwargs={'pk': self.pk})
 
     def __str__(self):
         return str(self.name)

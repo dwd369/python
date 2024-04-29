@@ -48,3 +48,9 @@ class RecipeModelTest(TestCase):
 
         # Compare the value to the expected result
         self.assertEqual(field_label, 'ingredients')
+    
+    def test_get_absolute_url(self):
+        book = Recipe.objects.get(id=1)
+        #get_absolute_url() should take you to the detail page of book #1
+        #and load the URL /books/list/1
+        self.assertEqual(book.get_absolute_url(), '/recipes/list/1')
