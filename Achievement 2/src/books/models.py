@@ -20,6 +20,7 @@ book_type_choices = (
 # Create your models here.
 class Book(models.Model):
     name = models.CharField(max_length = 120, default = 'No name...')
+    author_name = models.CharField(max_length = 120, null = True)
     price = (models.FloatField(help_text = 'in US dollars $', default = 0))
     genre = models.CharField(
         max_length = 12,
@@ -33,7 +34,6 @@ class Book(models.Model):
             default = 'hardcopy'
         )
     )
-    author_name = models.CharField(max_length = 120, null = True)
     pic = models.ImageField(upload_to = 'books', default = 'no_picture.jpg')
 
     def get_absolute_url(self):

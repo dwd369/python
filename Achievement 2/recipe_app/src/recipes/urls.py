@@ -1,14 +1,13 @@
 from django.urls import path, include
 from . import views
-from .views import RecipeListView, RecipeDetailView
+from .views import RecipeListView, RecipeDetailView, records
 # , recipelist, recipedetails
 
 app_name = 'recipes'
 
 urlpatterns = [
-   # path('list/', recipelist),
-   # path('list/<pk>', recipedetails),
    path('', views.home, name='home'),
+   path('search', views.records, name='search'),
    path('recipes/', RecipeListView.as_view(), name='list'),
    path('recipes/<pk>', RecipeDetailView.as_view(), name='detail'),
 ]
